@@ -1,0 +1,103 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu {
+     background: #636e72;
+     display: flex;
+     flex-flow: row nowrap;
+    }
+
+        .logo {
+             background: #ff7675;
+             flex: 1 1 auto;
+        }
+
+        .nav {
+            background: #ff7675;
+            flex: 5 1 auto;
+        }
+
+        .social {
+            background: #ff7675;
+            flex: 1 1 auto;
+        }
+
+    .texto-principal {
+        background: #e17055;
+    }   
+
+        h1 {
+            background: #ffeaa7;
+        }
+
+.section {
+    background: #000;
+    display: flex;
+}
+
+    .articulos {
+        background: #636e72;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        .article {
+            background: #0984e3;
+            flex: 1 1 40%;
+        }
+
+        .navegacion {
+            background: #74b9ff;
+            flex: 1 1 100%;
+        }
+
+    .aside {
+        background: #ff7675;
+        flex: 1 1 auto;
+    }
+
+    .publicacion{
+        background: yellow;
+    }
+
+.footer {
+    background: #000;
+    display: flex;
+}
+
+    .pie {
+        background: #fdcb6e;
+        flex:100%;
+    }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 600px){
+    .menu{
+        flex-direction: column;
+    }
+    .articulos{
+            flex-direction: column;
+    }
+}
+
+    
