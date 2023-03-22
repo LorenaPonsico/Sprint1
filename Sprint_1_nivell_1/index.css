@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.padre {
+.father {
     display: flex;
     flex-flow: column nowrap;
 }
@@ -36,7 +36,7 @@
             flex: 1 1 auto;
         }
 
-    .texto-principal {
+    .main-text {
         background: #e17055;
     }   
 
@@ -49,7 +49,7 @@
     display: flex;
 }
 
-    .articulos {
+    .articles {
         background: #636e72;
         flex: 2 1 auto;
         display: flex;
@@ -61,7 +61,7 @@
             flex: 1 1 40%;
         }
 
-        .navegacion {
+        .navigation {
             background: #74b9ff;
             flex: 1 1 100%;
         }
@@ -71,7 +71,7 @@
         flex: 1 1 auto;
     }
 
-    .publicacion{
+    .publication{
         background: yellow;
     }
 
@@ -80,7 +80,7 @@
     display: flex;
 }
 
-    .pie {
+    .foot {
         background: #fdcb6e;
         flex:100%;
     }
@@ -95,7 +95,7 @@
     .menu{
         flex-direction: column;
     }
-    .articulos{
+    .articles{
             flex-direction: column;
     }
 }
