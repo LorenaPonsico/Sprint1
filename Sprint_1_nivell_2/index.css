@@ -1,0 +1,140 @@
+* {
+    /* margin: 10px; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.father {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: url(images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu {
+     background: rgba(0,0,0,.1);
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+        .logo {
+             flex: 1 1 auto;
+        }
+        .imagelogo{
+            width: 80px;
+            height: 80px;
+        }
+        .nav {
+            flex: 5 1 auto;
+        }
+            .nav a{
+                color:gray;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+            .nav a:hover{
+                color:#e17055;
+            }
+
+        .social {
+            flex: 1 1 auto;
+        }
+            .social a{
+            color:gray;
+            }
+            .social a:hover{
+                color:#e17055;
+            }
+
+
+    .main-text {
+      
+      
+    }   
+
+        h1 {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: #e17055;
+            text-align: center;
+            opacity: 0.7;
+
+        }
+
+.section {
+    background: #000;
+    display: flex;
+    
+}
+
+    .articles {
+        background: #636e72;
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .imagearticle{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+        .article {
+            background: grey;
+            flex: 1 1 40%;
+        }
+
+        .navigation {
+            background: #74b9ff;
+            flex: 1 1 100%;
+        }
+
+    .aside {
+        background: gray;
+        flex: 1 1 auto;
+    }
+
+    .publication{
+        /* background: yellow; */
+    }
+
+.footer {
+    background: #000;
+    display: flex;
+   
+}
+
+    .foot {
+        background: #fdcb6e;
+        flex:100%;
+    
+    }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 600px){
+    .menu{
+        flex-direction: column;
+    }
+    .articles{
+            flex-direction: column;
+    }
+}
+
+    
