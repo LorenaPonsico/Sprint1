@@ -1,5 +1,4 @@
 * {
-    /* margin: 10px; */
     padding: 10px;
     box-sizing: border-box;
 }
@@ -21,14 +20,17 @@ a{
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
+    margin: 5px;
 }
 
     .menu {
-     background: rgba(0,0,0,.1);
+     
      display: flex;
      flex-flow: row nowrap;
      align-items: center;
+     
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
     
     }
 
@@ -41,6 +43,7 @@ a{
         }
         .nav {
             flex: 5 1 auto;
+         
         }
             .nav a{
                 color:gray;
@@ -63,7 +66,7 @@ a{
 
 
     .main-text {
-      
+        background: rgba(0,0,0,.1);
       
     }   
 
@@ -78,24 +81,22 @@ a{
 
 .section {
     display: flex;
-    padding: 10px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
     .articles {
-        background: #b2bec3;
+        background: gainsboro;
         flex: 1 1 50%;
         display: flex;
         flex-flow: row wrap;
        
-        
-        /* margin: 10px 0 10px 10px; */
-        /* padding: 10px 0px 10px 10px; */
-        /* align-content: space-between; */
+    
     }
         .article {
             background: #dfe6e9;
-            flex: 1 1 30%;
+            flex: 1 1 40%;
             margin: 10px;
             font-size: 12px;
             letter-spacing: 1px;
@@ -137,30 +138,38 @@ a{
 
         .navigation {
             flex: 1 1 100%;
+            text-align: center;
+
         }
 
     .aside {
-        background: #b2bec3;
+        background: gainsboro;
         flex: 2 1  auto;
         margin: 0px 0px 0px 10px;
         font-size: 12px;
-        max-width: 20%;
+        max-width: 20%;       
     }
 
     .publication{
-        /* background: yellow; */
+       text-align: center;
     }
+    h4{
+        text-transform: uppercase;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+   
 
 .footer {
     display: flex;
-    margin: 0;
-    padding-inline:inherit;
+    padding: 5px;
        
 }
 
     .foot {
         background: #b2bec3;
         flex:100%;
+        text-align: center;
+
     
     }
 
@@ -168,15 +177,26 @@ a{
     .section{
         flex-direction: column;
     }
+    .aside{
+        max-width: 100%;
+        margin: 0px;
+        margin-top: 10px;
+
+    }
+    
 }
 
 @media all and (max-width: 600px){
     .menu{
         flex-direction: column;
+        align-items: flex-end;
+       
     }
     .articles{
             flex-direction: column;
     }
+  
+    
 }
 
     
